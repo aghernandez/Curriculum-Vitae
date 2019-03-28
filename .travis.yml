@@ -8,7 +8,6 @@ git:
   depth: 3
 script:
   - yarn build
-  
 deploy:
   provider: pages
   skip-cleanup: true
@@ -17,6 +16,5 @@ deploy:
   local-dir: dist/
   target-branch: master
   commit_message: "Deploy release ${TRAVIS_TAG}"
-  fqdn: cv.arepa.dev
   on:
     branch: develop
